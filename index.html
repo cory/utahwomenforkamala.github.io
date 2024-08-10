@@ -3,28 +3,134 @@
 
 <head>
   <meta charset="UTF-8">
-  
+
   <title>Utah Women for Kamala</title>
-  
- <style type="text/css" style="display: none !important;">
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    overflow-x: hidden;
-  }
+
+  <style type="text/css" style="display: none !important;">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    #donate {
+      background-color: rgb(33, 38, 147);
+      color: rgb(250, 250, 250);
+      width: 100%;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .actblue {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 2em;
+    }
+
+    .howtohelp {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 2em;
+    }
+
+    .cta {
+      margin: 1em 0.25em 1em 0.25em;
+      line-height: 2em;
+      padding: 0.25em 1em 0.25em 1em;
+      border-radius: 50px;
+      background-color: #E71D2E;
+      color: #FFFFFF;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .helpcta {
+      margin: 1em 0.25em 1em 0.25em;
+      line-height: 2em;
+      padding: 0.25em 1em 0.25em 1em;
+      border-radius: 50px;
+      background-color: #164fd7;
+      color: #FFFFFF;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .emphasis {
+      font-weight: 600;
+      font-size: 120%;
+    }
+
+    .light {
+      font-weight: 100;
+      font-size: 90%;
+      color: #aaaaaa;
+    }
+
+    .hero {
+      padding-left: 10%;
+      width: 80%;
+    }
   </style>
 </head>
 
 <body>
-  Testing
-  Register to vote
-  <iframe src="https://register.vote.org/?partner=111111&campaign=free-tools" width="100%" marginheight="0" frameborder="0" id="frame1" scrollable ="no"></iframe><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.3/iframeResizer.min.js"></script><script type="text/javascript">iFrameResize({ log:true, checkOrigin:false});</script>
-  Donate
-  <a href="https://secure.actblue.com/" target="_blank">ActBlue to Donate</a>
-  Volunteer for Kamala
-  <a href="https://web.kamalaharris.com/forms/take-action-for-kamala-harris/" target="_blank">Sign Up to Volunteer</a>
+  <div id="donate">
+    <div class="emphasis">Chip in today to help power Kamala's campaign</div>
+    <div class="actblue">
+      <div><a class="cta" href="https://secure.actblue.com/donate/utahwomenforkamala?&amount=25"
+          aria-label="donate now 25" target="_blank">$25</a></div>
+      <div><a class="cta" href="https://secure.actblue.com/donate/utahwomenforkamala?&amount=47"
+          aria-label="donate now 47" target="_blank">$47</a></div>
+      <div><a class="cta" href="https://secure.actblue.com/donate/utahwomenforkamala?&amount=100"
+          aria-label="donate now 100" target="_blank">$100</a></div>
+      <div><a class="cta" href="https://secure.actblue.com/donate/utahwomenforkamala?&amount=250"
+          aria-label="donate now 250" target="_blank">$250</a></div>
+      <div><a class="cta" href="https://secure.actblue.com/donate/utahwomenforkamala?&amount=1000"
+          aria-label="donate now 1000" target="_blank">$1000</a></div>
+      <div><a href="https://secure.actblue.com/donate/utahwomenforkamala" class="cta" aria-label="donate now other"
+          target="_blank">Other</a></div>
+
+    </div>
+    <div class="light">If you’ve saved your payment
+      information with
+      ActBlue Express, your donation will go through immediately.</div>
+  </div>
+  <div class="howtohelp">
+    <div style="width:20%"><a href="https://kamalaharris.com/" taget="_blank"><img class="header__logo"
+          src="./HarrisLogo.svg" alt="Harris Walz | Democrats homepage"></a>
+    </div>
+    <div class="helpcta">Join us for the September 16, 2024 event!</div>
+    <div><a href="https://secure.actblue.com/donate/utahwomenforkamala" class="cta" aria-label="donate"
+        target="_blank">Donate</a></div>
+  </div>
+  <div class="hero">
+    <img width="100%" src="./kamala.webp" alt="kamala">
+  </div>
+  <div class="howtohelp">
+    <div><a href="https://web.kamalaharris.com/forms/take-action-for-kamala-harris/" class="helpcta"
+        aria-label="volunteer" target="_blank">Volunteer for Kamala</a></div>
+    <div><a href="https://www.vote.org/" class="helpcta" aria-label="register to vote" target="_blank">Register to
+        Vote</a></div>
+  </div>
 </body>
 
 </html>
